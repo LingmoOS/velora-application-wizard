@@ -18,8 +18,8 @@ int main(int argc, char* argv[])
     Dtk::Gui::DGuiApplicationHelper::loadTranslator();
 
     QDBusConnection connection = QDBusConnection::sessionBus();
-    if (!connection.registerService(QStringLiteral("org.deepin.dde.daemon.Launcher1")) ||
-        !connection.registerObject(QStringLiteral("/org/deepin/dde/daemon/Launcher1"), &Launcher1Compat::instance())) {
+    if (!connection.registerService(QStringLiteral("org.lingmo.daemon.Launcher1")) ||
+        !connection.registerObject(QStringLiteral("/org/lingmo/daemon/Launcher1"), &Launcher1Compat::instance())) {
         qFatal("register dbus service failed");
     }
   

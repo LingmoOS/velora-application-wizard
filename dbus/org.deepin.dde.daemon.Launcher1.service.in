@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 [D-BUS Service]
-Name=org.deepin.dde.daemon.Launcher1
+Name=org.lingmo.daemon.Launcher1
 Exec=@CMAKE_INSTALL_FULL_LIBEXECDIR@/dde-application-wizard-daemon-compat
-SystemdService=org.deepin.dde.daemon.Launcher1.service
+SystemdService=org.lingmo.daemon.Launcher1.service
